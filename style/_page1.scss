@@ -1,0 +1,118 @@
+@import "./variables";
+#rest{
+    width: calc(100% - 70px);
+    position: relative;
+    left: 70px;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#middle{
+    flex-grow: 1;
+    height: 100;
+}
+
+#right{
+    flex-grow: 2;
+    background-color: $main;
+    background-image: url($pattern);
+}
+
+#img{
+    position: absolute;
+    height: 55vh;
+    right:0;
+    margin-top: 25vh;
+    width: calc((100vw - 50px)*(2.2/3));
+    background-image: url("./background\ page1.jpg");
+    background-size: 100% 100%;
+}
+
+#quote{
+    position: absolute;
+    height: fit-content;
+    right:0;
+    margin-top: 45vh;
+    width: calc((100vw - 50px)*(2.2/3));
+    color: white;
+    font-size: 34px;
+    backdrop-filter: blur(40px);
+    text-align: center;
+    padding-block: 10px;
+}
+
+#quote .high{
+    color: $highlight;
+    font-size: 38px;
+}
+
+#rest #arrow{
+    position: absolute;
+    margin-left: calc((100% - 50px)/2);
+    bottom: -20px;
+    transform: rotateZ(90deg);
+    color: white;
+    font-size: 44px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+    width: 50px;
+    height: 80px;
+    text-align: center;
+    padding-top: 35px;
+    transition: 1s;
+}
+
+#rest #arrow a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#rest #arrow:hover{
+    animation-name: "downArrow";
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    opacity:1;
+    transition: 1s;
+    color: $highlight;
+    cursor: pointer;
+}
+
+@keyframes downArrow {
+    50%{
+        bottom: -35px;
+    }
+}
+
+#padded{
+    margin-left: 250px;
+}
+
+#right{
+    display:flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#firstLine, #secondLine{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 0;
+    color: rgba(208, 207, 207, 0.667);
+}
+
+#secondLine{
+    margin-top: 50px;
+}
+
+#name{
+    font-size: 34px;
+}
+
+#fname{
+    color:white;
+}
+#lname{
+    color:$highlight;
+}

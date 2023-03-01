@@ -1,0 +1,76 @@
+@import "./variables";
+
+#pageFive{
+    margin: 0;
+    border: 0;
+    background-color: $main;
+    width: calc(100% - 70px);
+    position: relative;
+    left: 70px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url($pattern);
+    .container {
+        // min-width: 70vw;
+        // max-width: 20vw;
+        max-width: 400px;
+        background-color: $three;
+        color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-top: 12px;
+    }
+
+    button{
+        border: none;
+        width: fit-content;
+        margin:8px;
+        background-color: transparent;
+        margin-inline: auto;
+    }
+    
+    #emailLink{
+        width: inherit;
+        padding: 4px;
+        border-radius: 2px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    #emailLink:hover {
+        background-color: #3e8e41;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    #webcontact{
+        display: flex;
+        justify-content: space-evenly;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        a{
+            cursor: pointer;
+        }
+        margin-block: 20px;
+    }
+    #resume{
+        color: white;
+        margin-block: auto;
+        font-size: x-large;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}

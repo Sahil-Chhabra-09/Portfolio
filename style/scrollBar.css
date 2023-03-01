@@ -1,0 +1,17 @@
+::-webkit-scrollbar{
+    width: 15px;
+    position: absolute;
+}
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey;
+background-color: #1b616f;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #143137;
+}
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+background: #143137; 
+} */

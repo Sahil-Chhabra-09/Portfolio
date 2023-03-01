@@ -1,0 +1,68 @@
+@import "./page1";
+@import "./variables";
+@import "./middle";
+@import "./page2";
+@import "./scrollSnapping";
+@import "./page3";
+@import "./page4";
+@import "./page5";
+
+
+@mixin flexit(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html{
+    scroll-behavior:smooth;
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+body{
+    width: 100vw;
+    max-width: 100%;
+    height: 500vh;
+    max-height: 100%;
+    margin:0;
+    padding:0;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    transform: rotateZ(-90deg);
+    transform-origin: left top;
+    position: fixed;
+    top:100vh;
+    left:0;
+    width: 100vh;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    background-color: $main;
+    z-index: 1;
+    background-image: url($pattern);
+}
+
+nav a{
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border: 2px solid black;
+    @include flexit();
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: $highlight;
+}
+
+#quote img{
+    width: 400px;
+}

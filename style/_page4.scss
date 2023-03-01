@@ -1,0 +1,46 @@
+@import "./variables";
+
+
+#pageFour{
+    margin: 0;
+    border: 0;
+    padding: 40px;
+    background-color: $main;
+    width: calc(100% - 70px);
+    position: relative;
+    left: 70px;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url($pattern);
+    #accordionExample{
+        min-width: 70%;
+        max-width: 40%;
+        max-height: 80vh;
+        a{
+            color: inherit;
+        }
+    }
+    #heading{
+        color: white;
+        margin-bottom:100px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    button{
+        text-align: center;
+    }
+    .accordion-body{
+        background-color: white;
+    }
+    .accordion-button{
+        background-color: $main;
+        box-shadow: 2px 2px 2px $three, 2px 2px 2px $three inset;
+        color:white;
+        :focus{
+            color:black;
+        }
+    }
+}
+

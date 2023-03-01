@@ -1,0 +1,164 @@
+@import "./variables";
+
+#pageThird{
+    margin: 0;
+    border: 0;
+    background-color: $main;
+    background-image: url($pattern);
+    width: calc(100% - 70px);
+    position: relative;
+    left: 70px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .skewed {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 85%;
+        z-index: 0;
+        transform: skewY(-12deg);
+        background-color: white;
+        transform-origin: top left;
+    }
+    p{
+        color: black;
+    }
+    h5{
+        color:black;
+    }
+    
+    #underline{
+        position: absolute;
+        top:0;
+        display: block;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        color: $three;
+    }
+
+    #projects{
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #items{
+        margin-top: 80px;
+        margin-inline: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project-tile{
+        width: 20vw;
+        height: 30vh;
+        max-height: 400px;
+        margin-inline: auto;
+        margin-block: 10px;
+        background-image: linear-gradient(45deg, $main, transparent, $main);
+        a{
+            height: 100%;
+            border: 1px ridge $three;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: black;
+            text-align: center;
+            img{
+                margin-inline: auto;
+                height: calc(100% - 12vw);
+            }
+        }
+    }
+
+    #text{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-tile{
+        box-shadow: 3px 3px 2px #1d1d20;
+    }
+
+    #text p{
+        font-size: 18px;
+        color: orangered;
+        opacity: 0;
+        padding-left: 3px;
+        padding-right: 3px;
+        font-weight: 800;
+    }
+
+    a:hover p{
+        animation-name: slowed;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    #showall{
+        background-color: $three;
+        text-decoration: none;
+        color: white;
+        padding: 10px 12px 10px 12px;
+        font-size: 18px;
+        box-shadow: 3px 3px 2px #1d1d20;
+        position: absolute;
+        bottom: 8vh;
+        z-index: 1;
+        border-radius: 5px;
+    }
+
+    #showall p{
+        display: inline;
+        padding-left: 10px;
+        color: $five;
+        font-weight: 900;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+    }
+
+    #showall:hover p{
+        color: gray;
+        animation-name: move;
+        animation-duration: 1.3s;
+        animation-iteration-count: infinite;
+    }
+
+    #showall:hover{
+        p{
+            color: $highlight;
+        }
+    }
+
+    @keyframes slowed {
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes move {
+        0%{
+            left: 0px;
+        }
+        50%{
+            left: 5px;
+        }
+        100%{
+            left: 0px;
+        }
+    }
+}

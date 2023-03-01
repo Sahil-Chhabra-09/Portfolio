@@ -1,0 +1,67 @@
+@import "./variables";
+
+
+#pageSecond{
+    height: 100vh;
+    width: calc(100% - 70px);
+    position: relative;
+    left: 70px;
+    #myImage{
+        height: 50%;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        position: relative;
+        bottom: 80%;
+        margin-inline:auto;
+        background:url(./aboutMe.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        box-shadow: 5px 5px 5px $three inset,
+                     -5px -5px 5px $three inset, 
+                     -5px 5px 5px $three inset, 
+                     5px -5px 5px $three inset;
+    }
+    #aboutMe{
+        position: relative;
+        bottom: 78%;
+        width: 90%;
+        max-width: 1000px;
+        margin-inline:auto;
+        font-size: 20px;
+        text-align: center;
+        font-style: italic;
+        border-radius: 11px;
+        background: linear-gradient(145deg, #ffffff, #e6e6e6);
+        box-shadow:  12px 12px 24px #666666,
+                     -12px -12px 24px #ffffff;
+    }
+    #name{
+        font-size: 28px;
+        color: black;
+    }
+    span{
+        color: $highlight;
+    }
+    a{
+        color: black;
+        font-family: monospace;
+        font-size: inherit;
+    }
+}
+
+.curved {
+    position: relative;
+    background: $main;
+    background-image: url($pattern);
+    height: 100%;
+    &::after{
+        content: '';
+        border-top-left-radius: 50% 50%;   //second parameter defines the length of the side for which the border-radius will be applied
+        border-top-right-radius: 50% 50%;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: #fff;
+        height: 90%;
+    }
+}

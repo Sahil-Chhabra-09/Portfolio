@@ -1,0 +1,712 @@
+#rest {
+  width: calc(100% - 70px);
+  position: relative;
+  left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#middle {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100;
+}
+
+#right {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  background-color: #325b64;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+}
+
+#img {
+  position: absolute;
+  height: 55vh;
+  right: 0;
+  margin-top: 25vh;
+  width: calc((100vw - 50px)*(2.2/3));
+  background-image: url("./background page1.jpg");
+  background-size: 100% 100%;
+}
+
+#quote {
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  right: 0;
+  margin-top: 45vh;
+  width: calc((100vw - 50px)*(2.2/3));
+  color: white;
+  font-size: 34px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  text-align: center;
+  padding-block: 10px;
+}
+
+#quote .high {
+  color: #F44C25;
+  font-size: 38px;
+}
+
+#rest #arrow {
+  position: absolute;
+  margin-left: calc((100% - 50px)/2);
+  bottom: -20px;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  color: white;
+  font-size: 44px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.8;
+  width: 50px;
+  height: 80px;
+  text-align: center;
+  padding-top: 35px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#rest #arrow a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#rest #arrow:hover {
+  -webkit-animation-name: "downArrow";
+          animation-name: "downArrow";
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #F44C25;
+  cursor: pointer;
+}
+
+@-webkit-keyframes downArrow {
+  50% {
+    bottom: -35px;
+  }
+}
+
+@keyframes downArrow {
+  50% {
+    bottom: -35px;
+  }
+}
+
+#padded {
+  margin-left: 250px;
+}
+
+#right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+}
+
+#firstLine, #secondLine {
+  position: absolute;
+  font-size: 20px;
+  margin-top: 0;
+  color: rgba(208, 207, 207, 0.667);
+}
+
+#secondLine {
+  margin-top: 50px;
+}
+
+#name {
+  font-size: 34px;
+}
+
+#fname {
+  color: white;
+}
+
+#lname {
+  color: #F44C25;
+}
+
+#styled {
+  position: absolute;
+  color: white;
+  font-size: 70px;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  text-shadow: 2px 2px 0px #000000, -2px 2px 0px black, 2px -2px 0px black, -2px -2px 0px black;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  width: 100vh;
+  top: 100vh;
+  text-align: center;
+  left: calc((100vw - (100vw - 80px))*1/2);
+  font-family: adamina;
+  letter-spacing: 8px;
+  opacity: 0.7;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 1000px) {
+  #styled {
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 745px) {
+  #styled {
+    font-size: 54px;
+  }
+}
+
+#pageSecond {
+  height: 100vh;
+  width: calc(100% - 70px);
+  position: relative;
+  left: 70px;
+}
+
+#pageSecond #myImage {
+  height: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  position: relative;
+  bottom: 80%;
+  margin-inline: auto;
+  background: url(./aboutMe.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 5px 5px 5px #143137 inset, -5px -5px 5px #143137 inset, -5px 5px 5px #143137 inset, 5px -5px 5px #143137 inset;
+          box-shadow: 5px 5px 5px #143137 inset, -5px -5px 5px #143137 inset, -5px 5px 5px #143137 inset, 5px -5px 5px #143137 inset;
+}
+
+#pageSecond #aboutMe {
+  position: relative;
+  bottom: 78%;
+  width: 90%;
+  max-width: 1000px;
+  margin-inline: auto;
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  border-radius: 11px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  -webkit-box-shadow: 12px 12px 24px #666666, -12px -12px 24px #ffffff;
+          box-shadow: 12px 12px 24px #666666, -12px -12px 24px #ffffff;
+}
+
+#pageSecond #name {
+  font-size: 28px;
+  color: black;
+}
+
+#pageSecond span {
+  color: #F44C25;
+}
+
+#pageSecond a {
+  color: black;
+  font-family: monospace;
+  font-size: inherit;
+}
+
+.curved {
+  position: relative;
+  background: #325b64;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+  height: 100%;
+}
+
+.curved::after {
+  content: '';
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  height: 90%;
+}
+
+#rest {
+  scroll-snap-align: start;
+}
+
+#pageSecond {
+  scroll-snap-align: start;
+}
+
+#pageThird {
+  scroll-snap-align: start;
+}
+
+#pageFour {
+  scroll-snap-align: start;
+}
+
+#pageFive {
+  scroll-snap-align: start;
+}
+
+#pageThird {
+  margin: 0;
+  border: 0;
+  background-color: #325b64;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+  width: calc(100% - 70px);
+  position: relative;
+  left: 70px;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pageThird .skewed {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  z-index: 0;
+  -webkit-transform: skewY(-12deg);
+          transform: skewY(-12deg);
+  background-color: white;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+#pageThird p {
+  color: black;
+}
+
+#pageThird h5 {
+  color: black;
+}
+
+#pageThird #underline {
+  position: absolute;
+  top: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  color: #143137;
+}
+
+#pageThird #projects {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#pageThird #items {
+  margin-top: 80px;
+  margin-inline: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#pageThird .project-tile {
+  width: 20vw;
+  height: 30vh;
+  max-height: 400px;
+  margin-inline: auto;
+  margin-block: 10px;
+  background-image: linear-gradient(45deg, #325b64, transparent, #325b64);
+}
+
+#pageThird .project-tile a {
+  height: 100%;
+  border: 1px ridge #143137;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: black;
+  text-align: center;
+}
+
+#pageThird .project-tile a img {
+  margin-inline: auto;
+  height: calc(100% - 12vw);
+}
+
+#pageThird #text {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#pageThird .project-tile {
+  -webkit-box-shadow: 3px 3px 2px #1d1d20;
+          box-shadow: 3px 3px 2px #1d1d20;
+}
+
+#pageThird #text p {
+  font-size: 18px;
+  color: orangered;
+  opacity: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-weight: 800;
+}
+
+#pageThird a:hover p {
+  -webkit-animation-name: slowed;
+          animation-name: slowed;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#pageThird #showall {
+  background-color: #143137;
+  text-decoration: none;
+  color: white;
+  padding: 10px 12px 10px 12px;
+  font-size: 18px;
+  -webkit-box-shadow: 3px 3px 2px #1d1d20;
+          box-shadow: 3px 3px 2px #1d1d20;
+  position: absolute;
+  bottom: 8vh;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+#pageThird #showall p {
+  display: inline;
+  padding-left: 10px;
+  color: #f7d842;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+}
+
+#pageThird #showall:hover p {
+  color: gray;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#pageThird #showall:hover p {
+  color: #F44C25;
+}
+
+@-webkit-keyframes slowed {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slowed {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 5px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 5px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+#pageFour {
+  margin: 0;
+  border: 0;
+  padding: 40px;
+  background-color: #325b64;
+  width: calc(100% - 70px);
+  position: relative;
+  left: 70px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+}
+
+#pageFour #accordionExample {
+  min-width: 70%;
+  max-width: 40%;
+  max-height: 80vh;
+}
+
+#pageFour #accordionExample a {
+  color: inherit;
+}
+
+#pageFour #heading {
+  color: white;
+  margin-bottom: 100px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#pageFour button {
+  text-align: center;
+}
+
+#pageFour .accordion-body {
+  background-color: white;
+}
+
+#pageFour .accordion-button {
+  background-color: #325b64;
+  -webkit-box-shadow: 2px 2px 2px #143137, 2px 2px 2px #143137 inset;
+          box-shadow: 2px 2px 2px #143137, 2px 2px 2px #143137 inset;
+  color: white;
+}
+
+#pageFour .accordion-button :focus {
+  color: black;
+}
+
+#pageFive {
+  margin: 0;
+  border: 0;
+  background-color: #325b64;
+  width: calc(100% - 70px);
+  position: relative;
+  left: 70px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+}
+
+#pageFive .container {
+  max-width: 400px;
+  background-color: #143137;
+  color: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#pageFive label {
+  margin-top: 12px;
+}
+
+#pageFive button {
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 8px;
+  background-color: transparent;
+  margin-inline: auto;
+}
+
+#pageFive #emailLink {
+  width: inherit;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#pageFive #emailLink:hover {
+  background-color: #3e8e41;
+}
+
+#pageFive h1 {
+  text-align: center;
+}
+
+#pageFive #webcontact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-block: 20px;
+}
+
+#pageFive #webcontact img {
+  width: 50px;
+  height: 50px;
+}
+
+#pageFive #webcontact a {
+  cursor: pointer;
+}
+
+#pageFive #resume {
+  color: white;
+  margin-block: auto;
+  font-size: x-large;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  height: 500vh;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  position: fixed;
+  top: 100vh;
+  left: 0;
+  width: 100vh;
+  height: 70px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #325b64;
+  z-index: 1;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+}
+
+nav a {
+  font-family: 'Times New Roman', Times, serif;
+  height: 100%;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #F44C25;
+}
+
+#quote img {
+  width: 400px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Chhabra</title>
+    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/nav.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
+    <script src="gsap.js" defer></script>
+    <link rel="icon" href="./icon.png">
+    <link rel="stylesheet" href="./style/scrollBar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script>
+      function updateLink() {
+        // Get the input element
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        var name = document.getElementById('senderName').value;
+  
+        // Use the variable to update the link
+        var link = document.getElementById('emailLink');
+        link.href = 'mailto:sahil.chh718@gmail.com?subject=' + subject + "&body=" + "I am " + name + ". " + message;
+      }
+    </script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <div class="scrollSnapping">
+        <nav id="nav">
+            <a class="link" href="#pageFive">Contact</a>
+            <a class="link" href="#pageFour">Certificates</a>
+            <a class="link" href="#pageThird">Projects</a>
+            <a class="link" href="#pageSecond">About</a>
+        </nav>
+        <div id="rest">
+            <div id="middle">
+                <p id="styled" style="opacity: 0">Let's Work Together!</p>
+            </div>
+            <div id="img"></div>
+            <p id="quote"><span id="big">Don't rest in the <span class="high">middle!</span></span><br><span id="padded">Rest in the <span class="high">end.</span></span></p>
+            <div id="right">
+                <p id="firstLine">Hi, I'm &ensp;<span id="name"><span id="fname">Sahil</span><span id="lname"> Chhabra</span></p>
+                <br>
+                <br>
+                <p id="secondLine">and I'm a CS undergrad</p>
+            </div>
+            <p id="arrow"><a href="#pageSecond">></a></p>
+        </div>
+        <div id="pageSecond">
+            <div class="curved"></div>
+            <div id="myImage"></div>
+            
+            <p id="aboutMe">Greetings, I am <span id="name">Sahil Chhabra</span>, a third-year student of Computer Science at <span>TIET University</span>. <br>Throughout my academic journey, I have gained experience in diverse fields such as <span>Deep Learning, Frontend, Backend, Machine Learning, and IOT</span> by working on several projects. I maintain consistency on <a href="https://leetcode.com/Sahil_Chhabra/" target="_blank">leetcode</a> and you can explore my project portfolio on my <a href="https://github.com/Sahil-Chhabra-09" target="_blank">Github profile.</a>
+        </p>
+        </div>
+        <div id="pageThird">
+          <div class="skewed"></div>
+          <section id="projects">
+            <div id="underline">
+              <h1>These are some of my projects</h1>
+            </div>
+            <div id="items">
+              <section class="project-tile">
+                  <a href="https://github.com/sahilchhabra718/the-cook-book" target="_blank">
+                    <img src="./project1.jpg" alt="project 1">
+                    <div id="text">The Cook Book</div>
+                  </a>
+              </section>
+              <section class="project-tile">
+                <a href="https://github.com/Sahil-Chhabra-09/Facebook-Prophet" target="_blank">
+                  <img src="./project2.jpg" alt="project 2">
+                  <div id="text">Facebook Prophet</div>
+                </a>
+              </section>
+              <section class="project-tile">
+                <a href="https://github.com/Sahil-Chhabra-09/Algorithm-Visualizer" target="_blank">
+                  <img src="./project3.jpg" alt="project 3">
+                  <div id="text">Algorithm Visualizer</div>
+                </a>
+              </section>
+              <section class="project-tile">
+                <a href="https://sahil-chhabra-09-diabetes-pred.streamlit.app/" target="_blank">
+                  <img src="./project4.png" alt="project 4">
+                  <div id="text">Diabetes Prediction</div>
+                </a>
+              </section>
+            </div>
+          </section>
+          <a href="https://github.com/Sahil-Chhabra-09" id="showall" target="_blank">Show all<p>></p></a>
+        </div>
+        <div id="pageFour">
+          <h1 id="heading">I am certified in...</h1>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Data Science
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="https://drive.google.com/file/d/1-V5qOnm6DsZZSHq5Ycl9BpZjYz9IYRvr/view?usp=sharing" target="_blank">R Programming</a></li>
+                    <li><a href="https://drive.google.com/file/d/1m9NvsLZeQA6QdblCJnRTyH5h5wnuQxTO/view?usp=sharing" target="_blank">Exploratory Data Analysis</a></li>
+                    <li><a href="https://drive.google.com/file/d/1OaEf8C6dqtpdpFOCzCWWMLORM3qz0wkU/view?usp=sharing" target="_blank">Getting and Cleaning Data</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  NLP
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>NLP with Classification and Vector Spaces</li>
+                    <li>NLP with Probabilistic Models</li>
+                    <li>NLP with Sequence Models</li>
+                    <li>NLP with Attention Models</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Others
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href = "https://www.freecodecamp.org/certification/Sahil_Chhabra/responsive-web-design">Free Code Camp's Responsive Web Design</a></li>
+                    <li>More coming soon...</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id = "pageFive">
+          <div class="container">
+            <h1>Contact Me</h1>
+            <div id="webcontact">
+              <a id="github" href="https://github.com/Sahil-Chhabra-09"><img src="./github.png"></a>
+              <a id="linkedin" href="https://www.linkedin.com/in/sahil-chhabra-9a6310227/"><img src="./linkedin.png"></a>
+              <a id="resume" href="https://drive.google.com/file/d/11syMFABjIRqi_gU4RcMtwsgqkvQoSFng/view?usp=sharing" target="_blank">Resume</a>
+            </div>
+            <label for="senderName">Name:</label>
+            <input type="text" id="senderName" name="name" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button onclick="updateLink()"><a id="emailLink" href="mailto:sahil.chh718@gmail.com">Send Email</a></button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

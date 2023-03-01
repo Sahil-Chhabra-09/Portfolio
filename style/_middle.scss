@@ -1,0 +1,30 @@
+@import "./variables";
+
+#styled{
+    position:absolute;
+    color: white;
+    font-size: 70px;
+    transform-origin: left top;
+    text-shadow: 2px 2px 0px #000000, -2px 2px 0px black, 2px -2px 0px black, -2px -2px 0px black;
+    transform: rotateZ(-90deg);
+    width: 100vh;
+    top: 100vh;
+    text-align: center;
+    left: calc((100vw - (100vw - 80px))*1/2);    //+ 100vw*(1/30)
+    font-family: adamina;
+    letter-spacing: 8px;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+@media (max-width: 1000px){
+    #styled{
+        letter-spacing: normal;
+    }
+}
+
+@media (max-width: 745px){
+    #styled{
+        font-size: 54px;
+    }
+}
